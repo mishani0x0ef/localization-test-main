@@ -10,7 +10,7 @@ on:
 
 jobs:
   sync-changes:
-    if: ${{ github.event.label.name == 'localization' }}
+    # if: ${{ github.event.label.name == 'localization' }}
     runs-on: ubuntu-latest
     steps:
       - name: copy-jsons
