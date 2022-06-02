@@ -27,4 +27,4 @@ jobs:
           user-email: github-automation@example.com
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-directory: "resources"
-          target-branch: main
+          target-branch: ${{ github.ref_name }}
