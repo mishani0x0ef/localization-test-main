@@ -18,7 +18,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: app\lang
+          source-directory: app
           destination-github-username: "mishani0x0ef"
           destination-repository-name: "localization-test-resouce"
           user-email: github-automation@example.com
