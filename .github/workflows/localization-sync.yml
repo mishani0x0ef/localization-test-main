@@ -16,15 +16,18 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: copy-jsons
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: app/lang/
-          destination-github-username: "mishani0x0ef"
-          destination-repository-name: "localization-test-resouce"
-          user-email: github-automation@example.com
-          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-directory: "resources"
-          target-branch: ${{ github.ref_name }}
+      - name: output-things
+        run: echo ${{ github.ref_name }}
+
+      # - name: copy-jsons
+      #   uses: cpina/github-action-push-to-another-repository@main
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+      #   with:
+      #     source-directory: app/lang/
+      #     destination-github-username: "mishani0x0ef"
+      #     destination-repository-name: "localization-test-resouce"
+      #     user-email: github-automation@example.com
+      #     commit-message: See ORIGIN_COMMIT from $GITHUB_REF
+      #     target-directory: "resources"
+      #     target-branch: ${{ github.ref_name }}
