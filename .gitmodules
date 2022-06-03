@@ -1,0 +1,4 @@
+[submodule "resources"]
+  active = true
+  url = https://github.com/mishani0x0ef/localization-test-resouce
+  path = submodules/lang
